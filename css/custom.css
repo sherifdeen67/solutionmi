@@ -1,13 +1,16 @@
 
 body{
     background-color: black;
-    
+    font-size: .9rem;   
 }
 
 .navbar-right{
     
 }
-
+.gallery-img > img {
+    width: 100%;
+    height: 100%;
+}
 .glyphicon{
     color:white;
     width:30px;
@@ -36,7 +39,7 @@ body{
     border-top: 2px solid #ffffff;
 }
 .Baloon{
-    color: goldenrod;
+    color: #f6af09;
     position: relative;
 }
 
@@ -53,13 +56,13 @@ body{
     text-align: center;
 }
 .our-mission-bg {
-    background-image: url(Baloon.jpg);
+    background-image: url(../img/Baloon.jpg);
 }
 .our-vision-bg {
-    background-image: url(Baloon.jpg);
+    background-image: url(../img/Baloon.jpg);
 }
 .our-value-bg {
-    background-image: url(Baloon.jpg);
+    background-image: url(../img/Baloon.jpg);
 }
 .cover {
     background-size: cover;
@@ -89,12 +92,12 @@ body{
     background: transparent;
 }
 .level {
-    margin-top: 2.8px;
+    padding: 2em;
 }
 
 .mag{
-    margin-top:20px;
-    margin-bottom:20px;
+    margin-top:30px;
+    margin-bottom:30px;
 }
 .mag> button{
     margin-right:15px;
@@ -106,7 +109,7 @@ body{
 }
 
 
-.content{
+.content-wrapper{
     margin-right:15%;
    margin-left:15%;
    margin-top:40px;
@@ -212,8 +215,6 @@ body{
  }
  .search-box {
 	margin: 0px 10px;
-   /* border-left: 1px solid #f2f2f2;
-	border-right: 1px solid #f2f2f2;*/
     padding: 1.2em;
 }
  .search-form {
@@ -249,7 +250,7 @@ body{
    text-align: center;
 }
 .social-media {
-    padding: 0 1em;
+	padding: 0 1em;
 }
 .social-media .fa {
 	color:#f2f2f2;
@@ -301,9 +302,22 @@ input[type="text"], input[type="password"], textarea, select {
 
 .intro-text {
     width: 50%;
-    margin-top: 3em;
+    margin-top: 2em;
+    font-size: 2.8em;
+    font-weight: 700;
 }
 
+/*.responsive {
+    width: 100%;
+    height: 100%;
+}*/
+.footer-text {
+    background-color: #252525;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 2em 0;
+}
 .responsive {
     width: 100%;
     height: auto;
@@ -314,37 +328,64 @@ input[type="text"], input[type="password"], textarea, select {
 		font-size: 1em;
 		margin-left: 1em;
 		line-height: 12px;
-		letter-spacing: normal;		
+        letter-spacing: normal;		
 	 }
 	 .brand-text {
 		font-size:0.8em;
      }
-     .content{
+     .gallery-img > img {
+        width: 100%;
+        height: auto;
+    }
+     .content-wrapper{
         margin-right:10px;
        margin-left:10px;
        margin-top:30px;
     }
     .intro-text {
-        margin-top: 1em;
-        width: 100%;
-        margin-left: 1em;
-        margin-right: 1em;
-        font-size: 26px;
+        width: 80%;
+        font-size: 1.5em;
+        margin: 2em 0;
     }
     .nav-pills .nav-link {
-        width: 80%;
+        width: 100%;
         text-align: center;
     }
-    
-    .pic {
+    .nav-pill-wrapper {
+        bottom: 1.2em;
         width: 80%;
-        height: auto;
-        margin-right: 1.5em;
+    }
+    .level {
+        padding: 1em;
+    }
+    .left {
+        margin-left: 2px;
+       /* margin-right: 10px;*/
     }
     .social-media {
         padding: 0 1em;
-        margin: 3em 100px;
+        margin: 3em 180px;
     }
+    .search-form input#search {
+        outline: none;
+        color: #f2f2f2;
+        margin-left: 90px;
+    }
+    .search-box {
+        margin: 0px 15px;
+        padding: 1.2em;
+    }
+    .nav-link {
+        font-family: 'Montserrat', "Open Sans", sans-serif; 
+        font-weight: 400;
+        text-align: center;
+    }
+    .navbar{
+        background-color:black !important;
+        margin-top: 0;
+        justify-content: center;        
+    }
+    
     
  }
  .just {
@@ -364,13 +405,13 @@ input[type="text"], input[type="password"], textarea, select {
  }
  
  .nav-pills > a {
-    background-color: goldenrod !important;
+    background-color: #f6af09 !important;
     color: black !important;
     
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     background-color: #f2f2f2 !important;
-    color: goldenrod !important;
+    color: #f6af09 !important;
 }
 .foots {
     background-color: #2a2d30;
@@ -378,10 +419,6 @@ input[type="text"], input[type="password"], textarea, select {
 }
 .text {
     color: #fff;
-}
-.pic {
-    width: 300px;
-    height: 350px;
 }
 .form-control {
     background-color: #f2f2f2;
@@ -472,7 +509,4 @@ p.lead {
     margin: 0 0 0 65px;
 }
 
-@media(max-width: 992px) {
-
-}
 
